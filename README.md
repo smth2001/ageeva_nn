@@ -1,5 +1,5 @@
 # 🧠 Fundamentals of Neural Networks Course
-
+test
 ## 📚 About
 
 This repository contains practical exercises for the **Fundamentals of Neural Networks** course created by **Mike Romanov**.
