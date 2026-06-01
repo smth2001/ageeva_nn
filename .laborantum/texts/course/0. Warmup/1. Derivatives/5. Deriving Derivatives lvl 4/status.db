@@ -1,6 +1,7 @@
 {
-    "correct": 0.1,
+    "correct": 1,
     "selectedVariantIds": [
+        0,
         7,
         3,
         8,
@@ -9,7 +10,6 @@
         6,
         2,
         9,
-        0,
         1
     ]
 }
