@@ -1,15 +1,15 @@
 {
-    "correct": 0.49206349206349204,
+    "correct": 0.9206349206349206,
     "testStatus": [
         {
             "name": "root -> task1 -> 1 -> 0",
-            "ok": false,
-            "status": "FAILED: The answer is not found or is of incorrect Type"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task1 -> 1 -> 1",
-            "ok": false,
-            "status": "FAILED: The answer is not found or is of incorrect Type"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task1 -> 2",
@@ -68,53 +68,53 @@
         },
         {
             "name": "root -> task3 -> 0",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 1",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 2",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 3",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 4",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 5",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 6",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 7",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 8",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task3 -> 9",
-            "ok": false,
-            "status": "FAILED: tensor dimensionalities do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 2, 2, 2)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task4_1 -> 0",
@@ -219,17 +219,17 @@
         {
             "name": "root -> task5 -> 0 -> 0",
             "ok": false,
-            "status": "FAILED: tensor shapes do not match:\nExpected shape: (2, 1)\nreceived shape: (2, 4)"
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 5.0"
         },
         {
             "name": "root -> task5 -> 0 -> 1",
             "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.5,'\n                    that is larger than eps (0.0001)"
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 1.5,'\n                    that is larger than eps (0.0001)"
         },
         {
             "name": "root -> task5 -> 1 -> 0",
             "ok": false,
-            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 2.25"
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 3.0"
         },
         {
             "name": "root -> task5 -> 1 -> 1",
@@ -238,83 +238,83 @@
         },
         {
             "name": "root -> task5 -> 2 -> 0",
-            "ok": false,
-            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 2.5"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 2 -> 1",
-            "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.5,'\n                    that is larger than eps (0.0001)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 3 -> 0",
-            "ok": false,
-            "status": "FAILED: tensor shapes do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 3)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 3 -> 1",
-            "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.75,'\n                    that is larger than eps (0.0001)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 4 -> 0",
-            "ok": false,
-            "status": "FAILED: tensor shapes do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 1)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 4 -> 1",
-            "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.25,'\n                    that is larger than eps (0.0001)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 5 -> 0",
-            "ok": false,
-            "status": "FAILED: tensor shapes do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 3)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 5 -> 1",
             "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.5,'\n                    that is larger than eps (0.0001)"
-        },
-        {
-            "name": "root -> task5 -> 6 -> 0",
-            "ok": false,
-            "status": "FAILED: tensor shapes do not match:\nExpected shape: (2, 2)\nreceived shape: (2, 1)"
-        },
-        {
-            "name": "root -> task5 -> 6 -> 1",
-            "ok": false,
             "status": "\n                    FAILED: Incorrect answer. Misfit is 0.25,'\n                    that is larger than eps (0.0001)"
         },
         {
+            "name": "root -> task5 -> 6 -> 0",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> task5 -> 6 -> 1",
+            "ok": true,
+            "status": "OK"
+        },
+        {
             "name": "root -> task5 -> 7 -> 0",
-            "ok": false,
-            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 2.0"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 7 -> 1",
-            "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.5,'\n                    that is larger than eps (0.0001)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 8 -> 0",
-            "ok": false,
-            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 1.0"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 8 -> 1",
-            "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.5,'\n                    that is larger than eps (0.0001)"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 9 -> 0",
-            "ok": false,
-            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 0.5"
+            "ok": true,
+            "status": "OK"
         },
         {
             "name": "root -> task5 -> 9 -> 1",
-            "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.5,'\n                    that is larger than eps (0.0001)"
+            "ok": true,
+            "status": "OK"
         }
     ]
 }
