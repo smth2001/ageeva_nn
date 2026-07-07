@@ -159,7 +159,7 @@
         {
             "name": "root -> case_1 -> raw_normal_equation_loss",
             "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.03125,'\n                    that is larger than eps (0.0001)"
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0625,'\n                    that is larger than eps (0.0001)"
         },
         {
             "name": "root -> case_1 -> raw_gram_eigenvalues",
@@ -289,7 +289,7 @@
         {
             "name": "root -> case_2 -> raw_normal_equation_loss",
             "ok": false,
-            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.046875,'\n                    that is larger than eps (0.0001)"
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0390625,'\n                    that is larger than eps (0.0001)"
         },
         {
             "name": "root -> case_2 -> raw_gram_eigenvalues",
