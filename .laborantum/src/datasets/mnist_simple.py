@@ -2,22 +2,30 @@ import torchvision.datasets
 
 class MNISTSimpleDataset:
     def __init__(self, train=True):
-        ...
-        ## Load MNIST dataset here
-        ## YOUR CODE HERE
+        self.mnist = torchvision.datasets.MNIST(
+            root="~/",
+            train=train,
+            download=True
+        )
 
+        self.X = self.mnist.data
+        self.y = self.mnist.targets
 
     def __len__(self):
-        res = 0
-        ## Return number of items that is there in the dataset
-        ## YOUR CODE HERE
-        return res
-
+        return len(self.X)
 
     def __getitem__(self, index):
-        sample = {}
+        image = self.X[index].float()
 
-        ## Return a sample of the dataset that corresponds to the input index
-        ## YOUR CODE HERE
-        
-        return sample 
+        # normalize from [0, 255] to [-1, 1]
+        image = image / 255.0
+        image = image * 2.0 - 1.0
+
+        label = self.y[index].long()
+
+        sample = {
+            "image": image,
+            "label": label
+        }
+
+        return sample
