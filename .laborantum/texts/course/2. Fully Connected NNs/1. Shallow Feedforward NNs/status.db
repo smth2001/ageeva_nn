@@ -1,0 +1,4 @@
+{
+    "correct": 0,
+    "error": "[NbClientApp] Executing .laborantum/texts/course/2. Fully Connected NNs/1. Shallow Feedforward NNs/task.ipynb\n0.00s - Debugger warning: It seems that frozen modules are being used, which may\n0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n0.00s - to python to disable frozen modules.\n0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n0.00s - Debugger warning: It seems that frozen modules are being used, which may\n0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n0.00s - to python to disable frozen modules.\n0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n[NbClientApp] Executing notebook with kernel: python3\n"
+}
