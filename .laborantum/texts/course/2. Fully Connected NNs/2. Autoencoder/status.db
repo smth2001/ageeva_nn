@@ -1,4 +1,245 @@
 {
-    "correct": 0,
-    "error": "[NbClientApp] Executing .laborantum/texts/course/2. Fully Connected NNs/2. Autoencoder/task.ipynb\n[NbClientApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('outputs' was unexpected)\n\nFailed validating 'additionalProperties' in markdown_cell:\n\nOn instance['cells'][3]:\n{'cell_type': 'markdown',\n 'id': '2dcfbd2c',\n 'metadata': {},\n 'outputs': ['...0 outputs...'],\n 'source': '# Autoencoder on MNIST\\n'\n           '\\n'\n           'In the previous chapter, we assembled th...'}\n[NbClientApp] Executing notebook with kernel: container_env\nTraceback (most recent call last):\n  File \"/usr/local/bin/jupyter-execute\", line 6, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/jupyter_core/application.py\", line 284, in launch_instance\n    super().launch_instance(argv=argv, **kwargs)\n  File \"/usr/local/lib/python3.11/site-packages/traitlets/config/application.py\", line 1081, in launch_instance\n    app.initialize(argv)\n  File \"/usr/local/lib/python3.11/site-packages/traitlets/config/application.py\", line 118, in inner\n    return method(app, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/nbclient/cli.py\", line 161, in initialize\n    self.run_notebook(path)\n  File \"/usr/local/lib/python3.11/site-packages/nbclient/cli.py\", line 215, in run_notebook\n    client.execute()\n  File \"/usr/local/lib/python3.11/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n  File \"/usr/local/lib/python3.11/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/usr/local/lib/python3.11/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\ntrain_sample = MNIST_train[0]\nvalid_sample = MNIST_valid[0]\n\nX_train = train_sample['image']\nX_valid = valid_sample['image']\ny_train = train_sample['label']\ny_valid = valid_sample['label']\n\nprint('X_train dtype:', X_train.dtype)\nprint('X_train shape:', X_train.shape)\nprint('y_train dtype:', y_train.dtype)\nprint('y_train shape:', y_train.shape)\n\nanswer['X_train.dtype'] = str(X_train.dtype)\nanswer['X_valid.dtype'] = str(X_valid.dtype)\nanswer['y_train.dtype'] = str(y_train.dtype)\nanswer['y_valid.dtype'] = str(y_valid.dtype)\nanswer['X_train.shape'] = list(X_train.shape)\nanswer['X_valid.shape'] = list(X_valid.shape)\nanswer['y_train.shape'] = list(y_train.shape)\nanswer['y_valid.shape'] = list(y_valid.shape)\nanswer['X_train.mean'] = float(X_train.mean())\nanswer['X_valid.mean'] = float(X_valid.mean())\n\n------------------\n\n\n\u001b[31m---------------------------------------------------------------------------\u001b[39m\n\u001b[31mTypeError\u001b[39m                                 Traceback (most recent call last)\n\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[6]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m train_sample = MNIST_train[\u001b[32m0\u001b[39m]\n\u001b[32m      2\u001b[39m valid_sample = MNIST_valid[\u001b[32m0\u001b[39m]\n\u001b[32m      3\u001b[39m \n\u001b[32m      4\u001b[39m X_train = train_sample[\u001b[33m'image'\u001b[39m]\n\n\u001b[31mTypeError\u001b[39m: 'NoneType' object is not subscriptable\n\n"
+    "correct": 0.6041666666666666,
+    "testStatus": [
+        {
+            "name": "root -> seed_check -> python.random -> 0",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.6087487915662309,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> seed_check -> python.random -> 1",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.45830651251717713,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> seed_check -> python.random -> 2",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.37339519129749765,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> seed_check -> python.random -> 3",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.6459520751168134,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> seed_check -> numpy.random.rand",
+            "ok": false,
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 0.22335845876249497"
+        },
+        {
+            "name": "root -> seed_check -> torch.rand",
+            "ok": false,
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 0.32847896"
+        },
+        {
+            "name": "root -> seed_check -> torch.backends.cudnn.deterministic",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 1,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> X_train.dtype",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_valid.dtype",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> y_train.dtype",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> y_valid.dtype",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_train.shape -> 0",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_train.shape -> 1",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_valid.shape -> 0",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_valid.shape -> 1",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_train.mean",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> X_valid.mean",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> check_batch -> data -> image",
+            "ok": false,
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 1.1203763"
+        },
+        {
+            "name": "root -> check_batch -> data -> label",
+            "ok": false,
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 2.5"
+        },
+        {
+            "name": "root -> check_batch -> signals -> reconstruction",
+            "ok": false,
+            "status": "FAILED: answers do not match:\nMaximal average mismatch: 0.0001\nreceived average mismatch: 0.5016317"
+        },
+        {
+            "name": "root -> loss_names -> 0",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_class",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> lr",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> betas -> 0",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> betas -> 1",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> eps",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> weight_decay",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> amsgrad",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> maximize",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> foreach",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> capturable",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> differentiable",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> fused",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> optimizer_defaults -> decoupled_weight_decay",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> scheduler_class",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> test_loss_val -> mae",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.05278974771499634,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> train_batch",
+            "ok": false,
+            "status": "FAILED: Edit distance between strings is 6"
+        },
+        {
+            "name": "root -> valid_batch",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> train_mae_history -> 0",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0012928977719864343,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> train_mae_history -> 1",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0012235779040775108,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> train_mae_history -> 2",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0010361074447012286,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> valid_mae_history -> 0",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0033370661695444337,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> valid_mae_history -> 1",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.00154544118853156,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> valid_mae_history -> 2",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0038046166772909285,'\n                    that is larger than eps (0.0001)"
+        },
+        {
+            "name": "root -> reconstruction_shape -> 0",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> reconstruction_shape -> 1",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> reconstruction_shape -> 2",
+            "ok": true,
+            "status": "OK"
+        },
+        {
+            "name": "root -> reconstruction_mae_after_training",
+            "ok": false,
+            "status": "\n                    FAILED: Incorrect answer. Misfit is 0.0020710229873657227,'\n                    that is larger than eps (0.0001)"
+        }
+    ]
 }
